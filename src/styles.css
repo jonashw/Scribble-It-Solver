@@ -1,0 +1,48 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  width: 1em;
+  height: 1.5em;
+  border-bottom: 2px solid black;
+  margin: 0 2px;
+}
+
+.box.unknown {
+  color: white;
+}
+
+.input {
+  font-size: 2em;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+.space {
+  display: inline-block;
+  width: 1em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.puzzle {
+  background: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 1em;
+}
+
+body {
+  background: #f6c82c;
+}
+
+* {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
