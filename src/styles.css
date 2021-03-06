@@ -1,48 +1,51 @@
+* {
+  font-family: "Comic Sans MS", "Comic Sans", "Varela Round", cursive;
+}
+
 .App {
-  font-family: sans-serif;
   text-align: center;
 }
 
-.box {
-  display: inline-block;
-  width: 1em;
-  height: 1.5em;
-  border-bottom: 2px solid black;
-  margin: 0 2px;
-}
-
-.box.unknown {
-  color: white;
-}
-
 .input {
-  font-size: 2em;
-  border-width: 2px;
+  border: 2px solid black;
+  display: inline-block;
   border-radius: 4px;
   padding: 0.5em;
+  background: white;
+}
+.input > .length,
+.input > input {
+  font-size: 2em;
+}
+.input > input {
+  border: none;
+  letter-spacing: 0.125em;
+  text-align: center;
+}
+.input > input:focus {
+  outline-color: white;
+}
+.input > .length {
+  color: #666;
 }
 
-.space {
-  display: inline-block;
-  width: 1em;
-}
-
-.mb-1 {
-  margin-bottom: 1em;
-}
-
-.puzzle {
+button {
   background: white;
   border: 2px solid black;
   border-radius: 4px;
-  display: inline-block;
-  padding: 1em;
+  padding: 0.5em 1em;
+}
+.mb-1 {
+  margin-bottom: 1em;
 }
 
 body {
   background: #f6c82c;
 }
 
-* {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+.word-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5em;
+  grid-gap: 5px;
 }
